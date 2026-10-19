@@ -1,0 +1,124 @@
+
+.dashboardcontent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+
+.dashboardcontent > .top{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboardcontent > .top > div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.dashboardcontent > .top > div button{
+    background-color: var(--add-cart);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dashboardcontent > .top > div >div{
+    display: flex;
+    gap: 5px;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.dashboardcontent > .top > div >div:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.dashboardcontent > .categories{
+    padding: 0 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.dashboardcontent > .categories > div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.dashboardcontent > .categories > div > :last-child{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0;
+}
+
+.dashboardcontent > .analytics{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.dashboardcontent > .analytics > .salesweek{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
+    align-items: end;
+}
+
+.dashboardcontent > .analytics > .salesweek > div{
+    /* height: 30%; */
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+
+.dashboardcontent > .analytics > .stockdeatails{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.dashboardcontent > .analytics > .stockdeatails > table{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dashboardcontent > .analytics > .stockdeatails > table td,th{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 7px;
+}
+
+.dashboardcontent > .analytics > .stockdeatails > table th{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}

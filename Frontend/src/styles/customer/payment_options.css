@@ -1,0 +1,108 @@
+
+
+.paymentcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.paymentcontainer .content{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+.paymentcontainer .left{
+    width: 65%;
+}
+
+.paymentcontainer .pOptions{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:0px 0px;
+    overflow: hidden;
+}
+
+.paymentcontainer .pOptions > h2{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.paymentcontainer .pOptions > div{
+    font-size: 20px;
+    display: flex;
+    padding: 10px 25px;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.paymentcontainer .pOptions > div input{
+    width: 23px;
+    height: 23px;
+}
+
+.paymentcontainer .pOptions > div label{
+    font-weight: bold;
+}
+
+.paymentcontainer .pOptions > div p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.paymentcontainer > .content > .right{
+    width: 35%;
+    height: fit-content;
+    background-color: white;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 10px;
+}
+
+.paymentcontainer  .right > :nth-child(2){
+    margin-top: 13px;
+}
+
+.paymentcontainer  .right > .d1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0; 
+}
+
+.paymentcontainer .right .dotted{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 7px 0;
+}
+
+.paymentcontainer .right .dotted + div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentcontainer .right > span{
+    color: green;
+    padding: 3px 0;
+}
+
+.paymentcontainer .right > button{
+    border: none;
+    border-radius: 5px;
+    padding: 13px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+}

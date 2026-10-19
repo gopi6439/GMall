@@ -1,0 +1,49 @@
+
+.adminaside{
+    width: 20%;
+    background-color: var(--secondary-color);
+    color: white;
+    height: 100vh;
+    position: static;
+    padding: 20px 10px;
+}
+
+.adminaside > h2{
+    padding: 20px;
+}
+
+.adminaside > h2 > span{
+    color: var(--add-cart);
+}
+
+.adminaside > span{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.adminaside ul{
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.adminaside ul > li{
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.adminaside ul > li > :first-child{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.adminaside ul > li:hover{
+    background-color: var(--primary-color);
+    /* cursor: pointer; */
+}

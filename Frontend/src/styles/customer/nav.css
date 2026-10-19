@@ -1,0 +1,101 @@
+
+nav{
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    padding: 12px 30px;
+   
+}
+
+nav > h2 > span{
+    color: var( --add-cart);
+}
+
+nav > h2{
+  white-space: nowrap;
+}
+
+.search{
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.search input{
+    width: 94%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+
+.search i{
+    cursor: pointer;
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+nav >:last-child{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+nav >:last-child:hover{
+    background-color: #7C3AED;
+    
+}
+
+nav ul > :last-child{
+    position: relative;
+}
+
+nav ul > li > :first-child{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul > li:hover{
+    border-bottom: 1px solid var(--add-cart);
+}
+
+nav ul .active{
+    border-bottom: 3px solid var(--add-cart);
+}
+
+nav li{
+    position: relative;
+}
+
+nav .cart{
+    background-color: var(--add-cart);
+    border-radius: 50%;
+    font-size: 12px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: black;
+}

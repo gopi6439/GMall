@@ -1,0 +1,114 @@
+
+.admindashboardcontent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+.admindashboardcontent > .categories{
+    padding: 0 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.admindashboardcontent > .categories > div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.admindashboardcontent > .categories > div > :last-child{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0;
+}
+
+.admindashboardcontent > .analytics{
+    height: 300px;
+    width: 96%;
+    margin:0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.admindashboardcontent > .analytics > .salesweek{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+    align-items: end;
+}
+
+.admindashboardcontent > .analytics > .salesweek > div{
+    /* width: 20px; */
+    height: 30%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.admindashboardcontent > .analytics > .salesweek > :nth-child(even){
+    height: 75%;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails{
+    width: 50%;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.admindashboardcontent > .analytics > .stockdeatails > table{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table td,th{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 7px;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table th{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table td > div {
+    display: flex;
+    gap: 6px;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table td > div > button{
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table td > div > :first-child{
+    background-color: rgba(137, 43, 226, 0.1);
+    color: blueviolet;
+    border: none;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails > table td > div > :last-child{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}

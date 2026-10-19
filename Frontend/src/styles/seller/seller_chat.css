@@ -1,0 +1,174 @@
+
+.sccontainer{
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.sccontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+
+.sccontainer > .top{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sccontainer > .top > div {
+    display: flex;
+    gap: 5px;
+    padding: 8px 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.sccontainer > .top > div:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.sccontainer > .content4{
+    width: 95%;
+    margin:0 auto;
+    height: 70vh;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.sccontainer > .content4 .chatlist{
+    width: 30%;
+    height: 100%;
+    padding-bottom: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sccontainer > .content4 .chatlist ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; 
+    /* gap: 5px;    */
+}
+
+.sccontainer > .content4 .chatlist ul .user{
+    /* background-color: red; */
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sccontainer > .content4 .chatlist ul .user:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.sccontainer > .content4 .chatlist ul .user >:first-child{
+    font-weight: bold;
+
+}
+
+.sccontainer > .content4 .chatlist ul .active{
+    background-color: var(--background-color);
+}
+
+.sccontainer > .content4 .chatlist ul .user >:last-child{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 3px 0;
+}
+
+.sccontainer > .content4 .chatscreen{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+
+.sccontainer > .content4 .chatscreen .top{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.sccontainer > .content4 .chatscreen > .startMessageText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sccontainer > .content4 .chatscreen .top :last-child{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+.sccontainer > .content4 .chatscreen .chats{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sccontainer > .content4 .chatscreen .chats ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sccontainer > .content4 .chatscreen .chats ul li{
+    width: fit-content;
+    padding: 7px 14px;
+    border-radius:10px 10px 0 10px;
+    font-size: 14px;
+}
+
+.sccontainer > .content4 .chatscreen .chats ul .sender{
+    background-color: var(--add-cart);
+    margin-left: auto;
+}
+
+.sccontainer > .content4 .chatscreen .chats ul .receiver{
+    background-color: var(--background-color);
+}
+
+.sccontainer > .content4 .chatscreen .bottom{
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.sccontainer > .content4 .chatscreen .bottom > #messagetag{
+    padding: 10px;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.sccontainer > .content4 .chatscreen .bottom > button{
+    padding: 5px 10px;
+    width: 15%;
+    background-color: var(--add-cart);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

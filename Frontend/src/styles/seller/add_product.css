@@ -1,0 +1,150 @@
+.addproductcontent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+
+.addproductcontent > .top{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addproductcontent > .top > div {
+    display: flex;
+    gap: 5px;
+    padding: 8px 10px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+.addproductcontent > .top > div:hover{
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.addproductcontent > .content3{
+    width: 95%;
+    height: fit-content;
+    margin:0 auto;
+    background-color: white;
+    padding:15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+.addproductcontent > .content3 > .leftcontent{
+    height: fit-content;
+    width: 65%;
+}
+
+.addproductcontent > .content3 > .leftcontent > form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > .divv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > .divv >:first-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > .divv >:last-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form input,select{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > .divv{
+    width: 100%;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > :last-child{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > :last-child > button{
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.addproductcontent > .content3 > .leftcontent > form > :last-child > :first-child{
+    background-color: var(--add-cart);
+}
+
+.addproductcontent > .content3 > .leftcontent > form > :last-child > :last-child{
+    background-color:rgba(137, 43, 226, 0.1);
+    color: var(--secondary-color);
+    
+}
+
+
+.addproductcontent > .content3 > .rightcontent{
+    width: 35%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.addproductcontent > .content3 > .rightcontent > :first-child{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.addproductcontent > .content3 > .rightcontent >img{
+    width: 100%;
+    height: 35vh;
+    border-radius: 10px;
+}
+
+
+.addproductcontent > .content3 > .rightcontent >:last-child{
+   padding: 8px;
+   width: 100%;
+   color: rgba(0, 0, 0, 0.5);
+   background-color: white;
+   border: 1px solid rgba(0, 0, 0, 0.5);
+   border-radius: 3px;
+
+}
+
+.addproductcontent > .content3 > .rightcontent >:last-child:hover{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

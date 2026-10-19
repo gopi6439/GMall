@@ -1,0 +1,23 @@
+
+
+.admincontainer .top{
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admincontainer .top > div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+    padding:8px 10px;
+    border-radius: 7px;
+}
+
+.admincontainer .top > div:hover{
+    background-color: var(--background-color);
+}

@@ -1,0 +1,122 @@
+
+
+.cartcontainer{
+    width: 100%;
+    display: flex;
+    background-color: var(--background-color);
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+.cartcontainer > .left{
+    width: 75%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cartcontainer > .left > :first-child{
+    font-size: 20px;
+}
+
+.cartcontainer > .left > #carttable{
+    width: 100%;
+    padding: 10px;
+}
+
+.cartcontainer > .left > #carttable img{
+    width: 50px;
+    height: 50px;
+}
+
+.cartcontainer > .left > #carttable tr div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.cartcontainer > .left > #carttable tr div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cartcontainer > .left > #carttable tr div > div > :first-child{
+    font-size: 16px;
+}
+
+.cartcontainer > .left > #carttable tr .quant{
+    display: flex;
+    justify-content: start;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.cartcontainer > .left > #carttable tr div > div > :last-child{
+    font-size: 14px;
+}
+
+.cartcontainer > .left > #carttable tr td > button{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: red;
+    background-color: white;
+}
+
+.cartcontainer > .left > #carttable tr td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cartcontainer > .left > #carttable tr td > button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.cartcontainer > .right{
+    width: 25%;
+    height: fit-content;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border-radius: 10px;
+}
+
+.cartcontainer > .right > :nth-child(2){
+    margin-top: 10px;
+}
+
+.cartcontainer > .right > .d1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartcontainer > .right .dotted{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 7px 0;
+}
+
+.cartcontainer > .right .dotted + div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartcontainer > .right > span{
+    color: green;
+    padding: 3px 0;
+}
+
+.cartcontainer > .right > button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+}

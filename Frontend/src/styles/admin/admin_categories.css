@@ -1,0 +1,98 @@
+
+
+.admincategorycontent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+
+.admincategorycontent > .content7{
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.admincategorycontent > .content7 > :first-child{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding: 8px 10px;
+}
+
+.admincategorycontent > .content7 > :first-child > input{
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.admincategorycontent > .content7 > :first-child button{
+    background-color: var(--add-cart);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.admincategorycontent > .content7 >table{
+    width: 100%;
+}
+
+.admincategorycontent > .content7 >table td > div > img{
+    width: 30px;
+    height: 30px;
+}
+
+.admincategorycontent > .content7 >table td > div > h3{
+    font-size: 14px;
+}
+
+.admincategorycontent > .content7 >table th{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+.admincategorycontent > .content7> table td > div{
+    display: flex;
+    align-items: center;
+    padding: 5px 0; 
+}
+
+.admincategorycontent > .content7> table td{
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.admincategorycontent > .content7> table td > .action{
+    display: flex;
+    gap: 7px;
+}
+
+.admincategorycontent > .content7> table td > .action > button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admincategorycontent > .content7> table td > .action >:first-child{
+    color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.2);
+    border: none;
+}
+
+.admincategorycontent > .content7> table td > .action >:last-child{
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}

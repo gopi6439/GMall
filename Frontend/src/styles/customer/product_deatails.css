@@ -1,0 +1,249 @@
+
+.pdcontainer{
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 30px;
+}
+
+.pview{
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    padding:15px 20px;
+}
+
+.pview > .left{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pview > .left > :first-child{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.pview > .left> :last-child{
+    display: flex;
+    gap: 10px;
+    align-self: flex-start;
+}
+
+.pview > .left> :last-child img{
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.pview > .right{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+.pview > .right > .rating{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pview > .right > .rating > :first-child{
+    background-color: green;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.pview > .right > .rating > :last-child{
+    color: rgba(0, 0, 0, 0.7);
+}
+.pview > .right > .prices{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pview > .right > .prices > :first-child{
+    font-size: 22px;
+}
+
+.pview > .right > .prices > :last-child{
+    font-size: 14px;
+    color: var(--discount-text);
+}
+
+.pview > .right > .prices > :nth-child(2){
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.pview > .right ul{
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.pview > .right ul + p{
+    padding: 5px 0;
+}
+
+.pview > .right ul + p > span{
+    color: green;
+    font-weight: bold;
+}
+
+.pview > .right > .quantity{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pview > .right > .quantity >div{
+    background-color: var(--background-color);
+    padding: 3px 5px;
+    display: flex;
+    gap: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.pview > .right > .quantity >div > span{
+    cursor: pointer;
+    /* background-color: orange; */
+    padding:0 3px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.pview > .right > .quantity +div{
+    display: flex;
+    gap: 7px;
+}
+
+.pview > .right > .quantity +div > :first-child{
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color: var(--add-cart);
+    border: none;
+    cursor: pointer;
+}
+
+.pview > .right > .quantity +div > :last-child > button{
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.pview > .right >:last-child{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.pview > .right >:last-child > :first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.pview > .right >:last-child > :first-child > :last-child{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+.pview > .right >:last-child > :last-child{
+    padding: 8px 16px;
+    color: blueviolet;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+}
+
+
+.pdcontainer > .bottom{
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pdcontainer > .bottom > .specification{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.pdcontainer > .bottom > .specification > #pdtable{
+    margin: 5px 0;
+}
+
+.pdcontainer > .bottom > .specification > #pdtable th{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.pdcontainer > .bottom > .specification > #pdtable td,th{
+    padding: 5px;
+    text-align: start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pdcontainer > .bottom > .reviews{
+    width: 60%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 3px;
+}
+
+.pdcontainer > .bottom > .reviews > .r1:hover{
+     background-color: var(--background-color);
+}
+
+.pdcontainer > .bottom > .reviews > .r1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pdcontainer > .bottom > .reviews > .r1 >:first-child > :first-child{
+    background-color: green;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.pdcontainer > .bottom > .reviews > .r1 >:first-child > :last-child{
+    margin: 0 5px;
+}

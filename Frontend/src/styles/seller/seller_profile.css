@@ -1,0 +1,107 @@
+.profileCard{
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: fixed;
+    right: 20px;
+    margin-top: 10px;
+    z-index: 10;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.502);
+}
+
+.profileCard > .cancel{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    color: rgb(115, 51, 242);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profileCard > .top{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profileCard > .top > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profileCard > .top > div span{
+    padding: 3px 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-radius: 10px;
+    background-color: rgba(124, 58, 237, 0.1);
+    font-size: 12px;
+}
+
+.profileCard > .top > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.profileCard > .line{
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.profileCard > .cd{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.profileCard > .cd > i{
+    color: rgb(115, 51, 242);;
+}
+
+.profileCard > :last-child{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 4px;
+    
+}
+
+.profileCard > :last-child > :first-child{
+    width: 50%;
+    background-color: var(--add-cart);
+    border-radius: 5px;
+    padding: 10px 14px;
+    border: none;
+    font-weight: bold;
+}
+
+.profileCard > :last-child > :last-child{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 14px;
+    border: 1px solid var(--add-cart);
+    color: rgb(103, 1, 1);
+    font-weight: bold;
+}
+
+.profileCard > :last-child > :last-child:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}

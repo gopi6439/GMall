@@ -1,0 +1,235 @@
+
+
+body{
+    background-color: var(--background-color);
+}
+
+.homecontainer{
+    width: 100%;
+    background-color: var(--background-color);
+    padding:20px 30px;
+    
+}
+
+.homecontainer > .banner{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(90deg,var(--secondary-color),var(--secondary-color),rgb(191, 0, 255));
+}
+
+.banner img{
+    width: 70px;
+    height: 70px;
+}
+
+.banner > :first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.banner > :first-child >h3{
+    font-size: 22px;
+} 
+
+.banner > :first-child > p{
+    font-size: 14px;
+}
+
+.category{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.category > div{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.category .active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category > div:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    gap: 20px;
+}
+
+.content > .filter{
+    background-color: white;
+    width: 250px;
+    height: fit-content;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.content > .filter > :first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > .filter > :first-child > button{
+    border-radius: 5px;
+    padding:2px 5px;
+    border: 1px solid rgba(116, 2, 255, 0.3);
+    background-color: white;
+    font-size: 12px;
+}
+
+.content > .filter > .price h3{
+    padding: 7px 0;
+}
+
+.content > .filter > .rating h3{
+    padding: 7px 0;
+}
+
+.content > .filter label{
+    margin: 7px;
+}
+
+.content > .filter input{
+    margin: 7px 0;
+}
+
+.productlist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productlist > :first-child{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productlist > :first-child > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0px 5px;
+}
+
+.productlist > :first-child > div >select{
+    /* border: 1px solid var(--primary-color); */
+    border: none;
+    padding: 2px 4px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    margin: 0 ;
+}
+
+.listproducts{
+    width: 100%;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.listproducts .p1{
+    /* width: 300px; */
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    padding:0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 3px;
+}
+
+.listproducts .p1 img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.listproducts .p1 > .rating{
+    background-color: green;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.listproducts .p1 button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.listproducts .p1 >:last-child{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.listproducts .p1 > h2{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.listproducts .p1 > h2 >:first-child{
+    font-size: 12px;
+    text-decoration: line-through;
+    padding: 0 5px;
+}
+
+.listproducts .p1 > h2 >:last-child{
+    color: var( --discount-text);
+    padding: 0 5px;
+}
+
+
+.listproducts .p1 >:last-child > :last-child{
+    padding: 7px 10px;
+    background-color: rgb(219, 238, 255);
+    color: var(--secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.listproducts .link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.listproducts .p1 .cartbtn{
+    background-color: var(--add-cart);
+    padding: 7px 10px;
+    color: black;
+    cursor: pointer;
+}
+
