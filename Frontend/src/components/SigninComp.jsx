@@ -56,11 +56,11 @@ function SigninComp({ loginState, setLoginState, setLogged }) {
         // console.log(tagName,tagValue);
     }
 
-    const validateData = (e) => {
+    const validateData = async(e) => {
         e.preventDefault();
         setLoading(true);
         if (checkData()) {
-            StoreDataInDatabase();
+            await StoreDataInDatabase();
             console.log("Signin Success");
             
         } else {
@@ -117,9 +117,9 @@ function SigninComp({ loginState, setLoginState, setLogged }) {
         let ImageUrl = await uploadImageToCloudinary();
         if(ImageUrl){
              try {
-            let response = await axios.post(`${API_BASE_URL}/signin`, { ...newUserData, profileImage: ImageUrl });
+            let response = await axios.post(`${API_BASE_URL}/signin`, { ...newUserData, profileImage: ImageUrl },{timeout:60000});
             // console.log(response);
-            if (response.status == 201) {
+          
                 let userData = response.data;
                 localStorage.setItem("MY_USERID", userData.userId);
                 localStorage.setItem("MY_FULLNAME", userData.fullName);
@@ -131,7 +131,7 @@ function SigninComp({ loginState, setLoginState, setLogged }) {
                 localStorage.setItem("MY_STATUS",userData.status);
                 localStorage.setItem("MY_ROLE", userData.role);
                 setLogged(true);
-            }
+            
         } catch (error) {
             setError({state:true,message:error.response.data});
             console.log(error.response);
