@@ -1,5 +1,5 @@
 import '../../styles/seller/add_product.css'
-import placeholderImage from '../../assets/placeholderImages/productImagePlaceholder.jpg'
+import placeholderImage from '../../assets/placeholderImages/productImagePlaceHolder.jpg'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import API_BASE_URL, { CLOUDINARY_URL } from '../../API';
