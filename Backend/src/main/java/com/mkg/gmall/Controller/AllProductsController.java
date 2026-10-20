@@ -18,7 +18,7 @@ import com.mkg.gmall.Service.AllProductsService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("*")
+@CrossOrigin("https://g-mall-delta.vercel.app")
 public class AllProductsController {
 	
 	private AllProductsService allProductsService;

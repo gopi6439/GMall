@@ -19,7 +19,7 @@ import com.mkg.gmall.Service.Customer.AddCartService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("*")
+@CrossOrigin("https://g-mall-delta.vercel.app")
 public class CutomerController {
 	
 	private AddCartService addCartService;
