@@ -1,20 +1,22 @@
-:root{
-    --primary-color:#7C3AED;
-    --secondary-color:#4C1D95;
-    --background-color:#F5F3FF;
-    --soft_button:#EDE9FE;
-    --add-cart:#F59E0B;
-    --discount-text:#EC4899;
+:root {
+    --primary-color: #7C3AED;
+    --secondary-color: #4C1D95;
+    --background-color: #F5F3FF;
+    --soft_button: #EDE9FE;
+    --add-cart: #F59E0B;
+    --discount-text: #EC4899;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: none;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -25,12 +27,12 @@
 }
 
 
-#loader{
+#loader {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 5px solid var(--secondary-color);
-    border-left:5px solid transparent;
+    border-left: 5px solid transparent;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -42,11 +44,12 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes loading{
-    from{
+@keyframes loading {
+    from {
         transform: rotateZ(0);
-    }to{
+    }
+
+    to {
         transform: rotateZ(360deg);
     }
 }
-
