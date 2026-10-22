@@ -30,7 +30,7 @@ function Nav({ cartCount, setShowProfileCard ,setSearchText}) {
                 </ul>
                 <div onClick={() => setShowProfileCard(true)}>
                     <i className="fa-solid fa-circle-user" style={{ color: 'rgba(255, 255, 255,1)' }}></i>
-                    <span>{localStorage.getItem("MY_FULLNAME")}</span>
+                    <span style={{whiteSpace:"nowrap"}}>{localStorage.getItem("MY_FULLNAME")}</span>
                 </div>
             </nav>
         </>
