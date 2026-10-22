@@ -60,20 +60,21 @@ function Home({ setProduct, setChatProduct, cartUpdate, setCartUpdate, searchTex
     let filterProducts = allProducts.filter((product) => {
         setLoading(true);
         // console.log("pf", priceFilter);
-        let matchSearch = product.productName.toLowerCase().includes(searchText.toLowerCase());
-        let matchPrice = true;
-        if (priceFilter === "u5000") {
-            matchPrice = product.currentPrice <= 5000;
+        if (product.status == "Active") {
+            let matchSearch = product.productName.toLowerCase().includes(searchText.toLowerCase());
+            let matchPrice = true;
+            if (priceFilter === "u5000") {
+                matchPrice = product.currentPrice <= 5000;
+            }
+            if (priceFilter === "u10000") {
+                matchPrice = product.currentPrice <= 10000;
+            }
+            if (priceFilter === "a10000") {
+                matchPrice = product.currentPrice > 10000;
+            }
+            setLoading(false);
+            return matchSearch && matchPrice;
         }
-
-        if (priceFilter === "u10000") {
-            matchPrice = product.currentPrice <= 10000;
-        }
-        if (priceFilter === "a10000") {
-            matchPrice = product.currentPrice > 10000;
-        }
-        setLoading(false);
-        return matchSearch && matchPrice;
     });
 
 

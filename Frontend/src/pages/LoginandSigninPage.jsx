@@ -16,7 +16,7 @@ function LoginandSigninPage({setLogged}) {
     <>
     <div className="logincontainer">
     <div className="left">
-        <h2>GMall</h2>
+        <h2>G<span style={{color:"orange"}}>Mall</span></h2>
         <h3>Shop, sell and chat in one marketplace</h3>
         <p>Customers find products and talk to sellers, Sellers run their own stall.Admins keep everything in order.</p>
         <div>

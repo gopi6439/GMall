@@ -69,7 +69,7 @@ function Dashboard({sellerInfo,setShowProfileCard,totalMyProducts}) {
             let data = response.data;
             let salesMonth = 0;
             data.forEach((value) => {
-                salesMonth+=value.currentPrice;
+                salesMonth+=value.allProducts.currentPrice;
             });
             setDashboardData(
                 {
