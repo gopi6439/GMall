@@ -50,10 +50,10 @@ function ManageUsers() {
 
     const checkAction = (e, user) => {
         e.preventDefault();
-         setLoading(true);
         let value = e.target.textContent.trim();
         // console.log("value",value);
         if (value == 'Approve') {
+            setLoading(true);
             approveUser(user);
         }
     }
