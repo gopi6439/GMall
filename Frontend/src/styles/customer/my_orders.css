@@ -48,7 +48,6 @@
 
 .myorderscontainer .ordersList .order1 .top > div{
     margin-right: 30px;
-    /* background-color: red; */
     text-align: start;
 }
 
@@ -83,10 +82,9 @@
 
 .myorderscontainer .ordersList .order1 .content{
     width: 100%;
-    /* background-color: orange; */
-    background-color: white;
     display: flex;
     padding: 5px 10px 10px;
+    background-color: white;
 }
 
 .myorderscontainer .ordersList .order1 .content .left{
@@ -125,11 +123,12 @@
 
 .myorderscontainer .ordersList .order1 .content .right{
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 8px;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .myorderscontainer .ordersList .order1 .content .right >:last-child{
@@ -214,4 +213,60 @@
     background-color: rgba(102, 0, 255, 0.228);
     color: var(--secondary-color);
     border: none;
+}
+
+/* RESPONSIVE */
+/* MEDIUM DEVICES */
+@media (max-width:1060px){
+
+    .myorderscontainer{
+    padding: 10px 20px;
+}
+
+    .myorderscontainer .cate{
+    display: flex;
+    gap: 5px;
+}
+
+.myorderscontainer .cate > div{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.myorderscontainer .ordersList .order1 .content{
+    flex-direction: column;
+}
+
+.myorderscontainer .ordersList .order1 .content .right{
+    width: 100%;
+    gap: 10px;
+    padding: 0 0px;
+    font-size: 12px;
+}
+.myorderscontainer .ordersList .order1 .top > div >:first-child{
+    font-size: 10px;
+}
+
+.myorderscontainer .ordersList .order1 .top > div >:last-child{
+    padding: 2px 0;
+    font-size: 12px;
+}
+
+.myorderscontainer .ordersList .order1 .top >:last-child{
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.myorderscontainer .ordersList .order1 > :last-child{
+    margin-top: 10px;
+}
+
+.myorderscontainer .ordersList .order1 .content .left{
+    width: 100%;
+}
+
+.myorderscontainer .ordersList .order1 .content .right > :last-child button{
+    font-size: 12px;
+}
+
 }

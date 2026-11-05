@@ -1,17 +1,15 @@
-
-
-body{
+body {
     background-color: var(--background-color);
 }
 
-.homecontainer{
+.homecontainer {
     width: 100%;
     background-color: var(--background-color);
-    padding:20px 30px;
-    
+    padding: 20px 30px;
+
 }
 
-.homecontainer > .banner{
+.homecontainer>.banner {
     width: 100%;
     height: 100px;
     display: flex;
@@ -20,60 +18,60 @@ body{
     color: white;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(90deg,var(--secondary-color),var(--secondary-color),rgb(191, 0, 255));
+    background: linear-gradient(90deg, var(--secondary-color), var(--secondary-color), rgb(191, 0, 255));
 }
 
-.banner img{
+.banner img {
     width: 70px;
     height: 70px;
 }
 
-.banner > :first-child{
+.banner> :first-child {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.banner > :first-child >h3{
+.banner> :first-child>h3 {
     font-size: 22px;
-} 
+}
 
-.banner > :first-child > p{
+.banner> :first-child>p {
     font-size: 14px;
 }
 
-.category{
+.category {
     display: flex;
     gap: 10px;
     margin: 10px 0;
     font-size: 14px;
 }
 
-.category > div{
+.category>div {
     padding: 5px 10px;
     border: 1px solid black;
     border-radius: 20px;
 }
 
-.category .active{
+.category .active {
     background-color: var(--primary-color);
     color: white;
 }
 
-.category > div:hover{
+.category>div:hover {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
 }
 
-.content{
+.content {
     width: 100%;
     background-color: var(--background-color);
     display: flex;
     gap: 20px;
 }
 
-.content > .filter{
+.content>.filter {
     background-color: white;
     width: 250px;
     height: fit-content;
@@ -84,61 +82,61 @@ body{
     border-radius: 10px;
 }
 
-.content > .filter > :first-child{
+.content>.filter> :first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.content > .filter > :first-child > button{
+.content>.filter> :first-child>button {
     border-radius: 5px;
-    padding:2px 5px;
+    padding: 2px 5px;
     border: 1px solid rgba(116, 2, 255, 0.3);
     background-color: white;
     font-size: 12px;
 }
 
-.content > .filter > .price h3{
+.content>.filter>.price h3 {
     padding: 7px 0;
 }
 
-.content > .filter > .rating h3{
+.content>.filter>.rating h3 {
     padding: 7px 0;
 }
 
-.content > .filter label{
+.content>.filter label {
     margin: 7px;
 }
 
-.content > .filter input{
+.content>.filter input {
     margin: 7px 0;
 }
 
-.productlist{
+.productlist {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.productlist > :first-child{
+.productlist> :first-child {
     background-color: white;
     width: 100%;
     border-radius: 10px;
-    padding:10px 20px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.productlist > :first-child > div{
+.productlist> :first-child>div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0px 5px;
+    padding: 0px 5px;
 }
 
-.productlist > :first-child > div >select{
+.productlist> :first-child>div>select {
     /* border: 1px solid var(--primary-color); */
     border: none;
     padding: 2px 4px;
@@ -146,24 +144,24 @@ body{
     outline: none;
     cursor: pointer;
     outline: none;
-    margin: 0 ;
+    margin: 0;
 }
 
-.listproducts{
+.listproducts {
     width: 100%;
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 15px;
     padding: 10px;
 }
 
-.listproducts .p1{
+.listproducts .p1 {
     /* width: 300px; */
     height: 320px;
     background-color: white;
     border-radius: 10px;
-    padding:0 10px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -171,49 +169,49 @@ body{
     gap: 3px;
 }
 
-.listproducts .p1 img{
+.listproducts .p1 img {
     width: 100%;
     height: 50%;
     border-radius: 10px;
 }
 
-.listproducts .p1 > .rating{
+.listproducts .p1>.rating {
     background-color: green;
     padding: 3px 8px;
     border-radius: 5px;
     color: white;
 }
 
-.listproducts .p1 button{
+.listproducts .p1 button {
     border: none;
     outline: none;
     border-radius: 5px;
 }
 
-.listproducts .p1 >:last-child{
+.listproducts .p1>:last-child {
     display: flex;
     gap: 10px;
     margin: 5px 0;
 }
 
-.listproducts .p1 > h2{
+.listproducts .p1>h2 {
     font-size: 18px;
     margin: 5px 0;
 }
 
-.listproducts .p1 > h2 >:first-child{
+.listproducts .p1>h2>:first-child {
     font-size: 12px;
     text-decoration: line-through;
     padding: 0 5px;
 }
 
-.listproducts .p1 > h2 >:last-child{
-    color: var( --discount-text);
+.listproducts .p1>h2>:last-child {
+    color: var(--discount-text);
     padding: 0 5px;
 }
 
 
-.listproducts .p1 >:last-child > :last-child{
+.listproducts .p1>:last-child> :last-child {
     padding: 7px 10px;
     background-color: rgb(219, 238, 255);
     color: var(--secondary-color);
@@ -221,15 +219,79 @@ body{
     border-radius: 5px;
 }
 
-.listproducts .link{
+.listproducts .link {
     text-decoration: none;
     color: inherit;
 }
 
-.listproducts .p1 .cartbtn{
+.listproducts .p1 .cartbtn {
     background-color: var(--add-cart);
     padding: 7px 10px;
     color: black;
     cursor: pointer;
 }
 
+
+/* RESPONSIVE */
+@media (max-width:575.98px) {
+    .content>.filter {
+        display: none;
+    }
+
+
+    .homecontainer>.banner {
+        height: 90px;
+        padding: 0 15px;
+    }
+
+    .banner img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .banner> :first-child>h3 {
+        font-size: 16px;
+    }
+
+    .banner> :first-child>p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* MEDIUM DEVICES */
+@media (min-width:576px) and (max-width:778.98px) {
+    .content>.filter {
+        display: none;
+    }
+
+
+    .homecontainer>.banner {
+        height: 100px;
+        padding: 0 10px;
+    }
+
+    .banner img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .banner> :first-child>h3 {
+        font-size: 18px;
+    }
+
+    .banner> :first-child>p {
+        font-size: 12px;
+    }
+
+}
+
+/* TABLET */
+@media (min-width:779px) and (max-width:998.98px) {
+    .content>.filter {
+        width: 350px;
+    }
+
+
+}

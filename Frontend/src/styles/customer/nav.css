@@ -1,5 +1,4 @@
-
-nav{
+nav {
     width: 100%;
     background-color: var(--secondary-color);
     display: flex;
@@ -8,18 +7,18 @@ nav{
     gap: 20px;
     color: white;
     padding: 12px 30px;
-   
+
 }
 
-nav > h2 > span{
-    color: var( --add-cart);
+nav>h2>span {
+    color: var(--add-cart);
 }
 
-nav > h2{
-  white-space: nowrap;
+nav>h2 {
+    white-space: nowrap;
 }
 
-.search{
+.search {
     width: 80%;
     height: 40px;
     background-color: white;
@@ -30,7 +29,7 @@ nav > h2{
     padding-right: 15px;
 }
 
-.search input{
+.search input {
     width: 94%;
     height: 100%;
     background-color: transparent;
@@ -39,17 +38,17 @@ nav > h2{
     padding: 0 10px;
 }
 
-.search i{
+.search i {
     cursor: pointer;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     list-style-type: none;
     gap: 20px;
 }
 
-nav >:last-child{
+nav .profile {
     display: flex;
     gap: 5px;
     align-items: center;
@@ -59,33 +58,40 @@ nav >:last-child{
     border-radius: 5px;
 }
 
-nav >:last-child:hover{
+nav .profile:hover {
     background-color: #7C3AED;
-    
 }
 
-nav ul > :last-child{
+nav>:last-child {
+    display: none;
+}
+
+nav>:last-child:hover {
+    background-color: #7C3AED;
+}
+
+nav ul> :last-child {
     position: relative;
 }
 
-nav ul > li > :first-child{
+nav ul>li> :first-child {
     color: white;
     text-decoration: none;
 }
 
-nav ul > li:hover{
+nav ul>li:hover {
     border-bottom: 1px solid var(--add-cart);
 }
 
-nav ul .active{
+nav ul .active {
     border-bottom: 3px solid var(--add-cart);
 }
 
-nav li{
+nav li {
     position: relative;
 }
 
-nav .cart{
+nav .cart {
     background-color: var(--add-cart);
     border-radius: 50%;
     font-size: 12px;
@@ -98,4 +104,76 @@ nav .cart{
     top: -10px;
     right: -10px;
     color: black;
+}
+
+/* RESPONSIVE */
+/* MOBILE */
+@media (max-width:575px) {
+
+    nav {
+        gap: 0px;
+        padding: 10px 15px;
+    }
+
+    nav>:last-child {
+        display: block;
+        padding: 7px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    nav>ul {
+        display: none;
+        font-size: 12px;
+    }
+
+    .search {
+        padding-right: 10px;
+        height: 30px;
+        margin: 0px 10px;
+    }
+
+    nav .profile:hover{
+        background-color: transparent;
+    }
+
+    nav .profile>span {
+        display: none;
+    }
+}
+
+/* TABLET */
+@media (min-width:576px) and (max-width:778.98px) {
+
+    nav {
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    nav>:last-child {
+        display: block;
+        padding: 7px 15px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav>ul {
+        display: none;
+        font-size: 14px;
+    }
+
+    .search {
+        padding-right: 10px;
+        height: 35px;
+    }
+
+    .search input {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
 }

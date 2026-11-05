@@ -147,7 +147,8 @@ function SigninComp({ loginState, setLoginState, setLogged }) {
 
     return (
         <>
-            <div className="right">
+            <div className="signinRight">
+                 <h2>G<span style={{color:"orange"}}>Mall</span></h2>
                 <form className='signinform' onSubmit={validateData}>
                     <h2>Create Your Account</h2>
                     <span>choose how you want to use GMall</span>

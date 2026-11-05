@@ -3,7 +3,10 @@
     width: 100%;
     height: 100vh;
     display: flex;
+}
 
+.logincontainer .loginRight >:first-child{
+    display: none;
 }
 
 /* LEFT */
@@ -18,6 +21,10 @@
 .logincontainer .left h3{
     font-size: 40px;
     margin-top: 30px;
+}
+
+.logincontainer .left h2{
+    font-size: 40px;
 }
 
 .logincontainer .left p{
@@ -35,7 +42,7 @@
 }
 
 /* RIGHT */
-.logincontainer .right{
+.logincontainer .loginRight{
     width: 50%;
     height: 100vh;
     background-color: var(--background-color);
@@ -138,4 +145,105 @@
 .loginform > :last-child > span:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+/* MOBILE VIEW */
+@media (max-width:575px){
+    .logincontainer .loginRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform{
+    width: 80%;
+    height: 67vh;
+}
+
+.logincontainer .loginRight >:first-child{
+    display: block;
+    font-size: 50px;
+    margin: 20px 0px;
+}
+
+.logincontainer .left{
+    display: none;
+}
+
+}
+
+/* MEDIUM DEVICE VIEW */
+@media (min-width:576px) and (max-width:778.98px){
+    .logincontainer .loginRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginform{
+    width: 70%;
+    height: 68vh;
+}
+
+.logincontainer .loginRight >:first-child{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.logincontainer .left{
+    display: none;
+}
+
+}
+
+/* LARGE TABLET */
+@media (min-width:779px) and (max-width:998px){
+
+.logincontainer .left{
+    padding: 50px 20px;
+}
+
+.logincontainer .left h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.logincontainer .left > div >img{
+    width: 80px;
+    height: 80px;
+}
+
+.loginform{
+    width: 90%;
+}
+}
+
+
+/* SMALL PC DEVICES */
+@media (min-width:999px) and (max-width:1399.98px){
+
+.logincontainer .left{
+    padding: 50px 45px;
+}
+
+.logincontainer .left h3{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.logincontainer .left > div >img{
+    width: 100px;
+    height: 100px;
+}
+
+.loginform{
+    width: 80%;
+}
+
+
 }

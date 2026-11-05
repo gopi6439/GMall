@@ -1,5 +1,9 @@
-/* RIGHT */
-.logincontainer .right{
+.logincontainer .left {
+    display: block;
+}
+
+
+.logincontainer .signinRight {
     width: 50%;
     height: 100vh;
     background-color: var(--background-color);
@@ -8,7 +12,11 @@
     justify-content: center;
 }
 
-.signinform{
+.logincontainer .signinRight>:first-child {
+    display: none;
+}
+
+.signinform {
     width: 60%;
     height: 85vh;
     background-color: white;
@@ -19,27 +27,27 @@
     border-radius: 10px;
 }
 
-.signinform .signinerror{
+.signinform .signinerror {
     color: red;
     font-size: 14px;
     display: none;
 }
 
-.signinform >:first-child{
+.signinform>:first-child {
     text-align: center;
 }
 
-.signinform >:first-child + span{
+.signinform>:first-child+span {
     text-align: center;
 }
 
-.signinform > div{
+.signinform>div {
     display: flex;
     gap: 10px;
     padding-bottom: 0px;
 }
 
-.signinform > div > div{
+.signinform>div>div {
     padding: 7px 14px;
     border: 1px solid black;
     border-radius: 20px;
@@ -47,22 +55,22 @@
     cursor: pointer;
 }
 
-.signinform > div > div:hover{
+.signinform>div>div:hover {
     background-color: var(--primary-color);
     color: white;
 }
 
-.signinform > div > .active{
+.signinform>div>.active {
     background-color: var(--primary-color);
     color: white;
     border: 1px solid var(--secondary-color);
 }
 
-.signinform label{
+.signinform label {
     padding: 3px 0 0px;
 }
 
-.signinform input{
+.signinform input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -70,13 +78,13 @@
     border: 1px solid var(--secondary-color);
 }
 
-.signinform #info{
+.signinform #info {
     padding: 5px 0;
     font-size: 15px;
 }
 
 
-.signinform #signin{
+.signinform #signin {
     width: 100%;
     padding: 12px;
     border-radius: 5px;
@@ -85,19 +93,126 @@
     color: white;
     display: block;
     margin-top: 5px;
+    cursor: pointer;
 }
 
-.signinform #login:hover{
+.signinform #signin:hover {
+    background-color: var(--secondary-color);
+}
+
+.signinform #login:hover {
     background-color: var(--secondary-color);
     cursor: pointer;
 }
 
-.signinform > :last-child{
+.signinform> :last-child {
     text-align: center;
     padding: 10px 0;
 }
 
-.signinform > :last-child > span:hover{
+.signinform> :last-child>span:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+
+
+/* MOBILE VIEW */
+@media (max-width:575px) {
+    .logincontainer .signinRight {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signinform {
+        width: 80%;
+        height: 82vh;
+        background-color: white;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 10px;
+    }
+
+    .logincontainer .signinRight>:first-child {
+        display: block;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .logincontainer .left {
+        display: none;
+    }
+
+}
+
+
+
+/* MEDIUM DEVICE VIEW */
+@media (min-width:576px) and (max-width:778.98px) {
+    .logincontainer .signinRight {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signinform {
+        width: 70%;
+        height: 82vh;
+        background-color: white;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-radius: 10px;
+    }
+
+    .logincontainer .signinRight>:first-child {
+        display: block;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .logincontainer .left {
+        display: none;
+    }
+
+}
+
+/* LARGE TABLET */
+@media (min-width:779px) and (max-width:998px) {
+
+    /* LEFT CODE FROM LOGIN CSS */
+
+    .signinform {
+        width: 90%;
+    }
+
+    .signinform>div>div {
+    padding: 7px 10px;
+    font-size: 13px;
+}
+
+}
+
+/* SMALL PC DEVICES */
+@media (min-width:999px) and (max-width:1399.98px) {
+
+    /* LEFT CODE FROM LOGIN CSS */
+
+    .signinform {
+        width: 80%;
+    }
+
+
 }

@@ -34,7 +34,7 @@ function LoginComp({ loginState, setLoginState, setLogged }) {
         } else {
             console.log("Login Failed")
         }
-        
+
     }
 
     async function checkDatabase() {
@@ -48,7 +48,7 @@ function LoginComp({ loginState, setLoginState, setLogged }) {
             localStorage.setItem("MY_PROFILEIMAGE", userData.profileImage);
             localStorage.setItem("MY_PHONE", userData.phone);
             localStorage.setItem("MY_ROLE", userData.role);
-            localStorage.setItem("LOGGEDIN","true");
+            localStorage.setItem("LOGGEDIN", "true");
             console.log("Login Successfull");
             setLogged(true);
         } catch (error) {
@@ -73,7 +73,8 @@ function LoginComp({ loginState, setLoginState, setLogged }) {
 
     return (
         <>
-            <div className="right">
+            <div className="loginRight">
+                <h2>G<span style={{ color: "orange" }}>Mall</span></h2>
                 <form className='loginform' onSubmit={validateData}>
                     <h2>Welcome back !</h2>
                     <span>Log in to continue</span>

@@ -81,7 +81,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
     border-radius: 10px;
 }
 
@@ -120,3 +120,36 @@
     margin: 5px 0;
     cursor: pointer;
 }
+
+
+/* RESPONSIVE */
+/* MEDIUM DEVICE */
+@media (max-width:778.98px){
+    .cartcontainer{
+    flex-direction: column;
+}
+
+.cartcontainer > .left{
+    width: 100%;
+    padding: 20px;
+}
+.cartcontainer > .right{
+    width: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+}
+
+/* TABLET */
+@media (min-width:779px) and (max-width:998.98px){
+    .cartcontainer > .left{
+    width: 60%;
+    padding: 10px;
+}
+.cartcontainer > .right{
+    width: 40%;
+    gap: 5px;
+}
+}
+
