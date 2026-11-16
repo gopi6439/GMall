@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import '../../styles/admin/admin_dashboard.css'
 
-function AdminDashboard({ setDashboardData ,totalCustomers,totalSellers,totalProducts,totalAwaitingApproval}) {
+function AdminDashboard({totalCustomers,totalSellers,totalProducts,totalAwaitingApproval}) {
 
     const [sellersList,setSellersList] = useState([]);
     
@@ -15,11 +15,7 @@ function AdminDashboard({ setDashboardData ,totalCustomers,totalSellers,totalPro
             }
         });
         setSellersList(updatedSellerList);
-         setDashboardData(
-            {
-                ...dashboardData, newSellersList: updatedSellerList
-            }
-        )
+        
         // console.log("Temp",sellersList);
         // console.log("Rejected");
         // console.log("original",dashboardData.newSellersList);
@@ -33,11 +29,7 @@ function AdminDashboard({ setDashboardData ,totalCustomers,totalSellers,totalPro
             return data;
         });
         deleteSeller(e, seller);
-        setDashboardData(
-            {
-                ...dashboardData, newSellersList: updatedSellerStatus
-            }
-        )
+        
         // console.log("Approved");
         // console.log("Temp", sellersList);
         // console.log("original", dashboardData.newSellersList);
@@ -62,7 +54,7 @@ function AdminDashboard({ setDashboardData ,totalCustomers,totalSellers,totalPro
                         <span>products</span>
                     </div>
                     <div>
-                        <h1>{totalAwaitingApproval}</h1>
+                        <h2>{totalAwaitingApproval}</h2>
                         <span>Awaiting approval</span>
                     </div>
                 </div>

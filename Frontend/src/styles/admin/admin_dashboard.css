@@ -15,6 +15,10 @@
     gap: 10px;
 }
 
+.admindiv{
+    width: 80%;
+}
+
 .admindashboardcontent > .categories > div{
     display: flex;
     flex-direction: column;
@@ -111,4 +115,38 @@
     background-color: white;
     color: red;
     border: 1px solid red;
+}
+
+/* RESPONSIVE */
+@media  (max-width: 800px){
+
+    .admindiv{
+        width: 100%;
+    }
+
+    .admindashboardcontent > .analytics{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admindashboardcontent > .analytics > .stockdeatails{
+    width: 93%;
+    height: auto;
+}
+
+.admindashboardcontent > .analytics > .salesweek{
+   width: 93%;
+   gap: 5px;
+}
+
+.admindashboardcontent > .categories h2{
+    font-size: 20px;
+}
+
+.admindashboardcontent > .categories span{
+    font-size: 14px;
+}
+
 }

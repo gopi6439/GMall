@@ -13,13 +13,13 @@ function Nav({ cartCount, setShowProfileCard, setSearchText }) {
 
     const showMenu = (e) => {
         let tag = document.getElementById('ul');
-        ul.style.display = 'flex';
+        tag.style.display = 'flex';
         setShowCancel(true);
     }
 
     const cancelMenu = (e) => {
         let tag = document.getElementById('ul');
-        ul.style.display = 'none';
+        tag.style.display = 'none';
         setShowCancel(false);
     }
 

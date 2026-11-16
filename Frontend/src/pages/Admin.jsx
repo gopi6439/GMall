@@ -88,7 +88,7 @@ function Admin({setLogged}) {
                 <div className="admincontainer" style={{ display: "flex" }}>
                     <AdminLeftNav setTabSelect={setTabSelect}/>
                     {showProfileCard && <AdminProfile setShowProfileCard={setShowProfileCard} adminData={adminData} setLogged={setLogged}/> }
-                    <div style={{width:'80%',display:'flex',flexDirection:'column',gap:'20px'}}>
+                    <div className="admindiv" style={{display:'flex',flexDirection:'column',gap:'20px'}}>
                     <AdminTopNav adminDetails={adminDetails} tabSelect={tabSelect} setShowProfileCard={setShowProfileCard}/>
                     <Routes>
                         <Route path="/" element={<AdminDashboard totalCustomers={totalCustomers} totalSellers={totalSellers} totalProducts={totalProducts} totalAwaitingApproval={totalAwaitingApproval}/>}></Route>
