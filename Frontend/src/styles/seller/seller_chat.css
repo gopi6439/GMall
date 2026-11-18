@@ -1,11 +1,7 @@
 
-.sccontainer{
-    width: 100%;
-    background-color: var(--background-color);
-}
 
 .sccontainer{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -171,4 +167,12 @@
     border: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+    .startMessageText h2{
+        font-size: 18px;
+    }
 }

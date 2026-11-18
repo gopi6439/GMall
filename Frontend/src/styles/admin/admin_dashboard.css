@@ -122,6 +122,8 @@
 
     .admindiv{
         width: 100%;
+        height: 100vh;
+        overflow-y: auto;
     }
 
     .admindashboardcontent > .analytics{
@@ -148,5 +150,20 @@
 .admindashboardcontent > .categories span{
     font-size: 14px;
 }
+
+}
+
+@media (min-width: 801px) and (max-width: 1200px){
+
+
+    .admindashboardcontent > .analytics > .salesweek{
+    padding: 10px;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px;
+}
+
+    .admindashboardcontent > .analytics > .salesweek > div{
+        font-size: 8px;
+    }
 
 }

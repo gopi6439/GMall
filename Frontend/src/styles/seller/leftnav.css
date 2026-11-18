@@ -47,3 +47,43 @@
     background-color: var(--primary-color);
     /* cursor: pointer; */
 }
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .showMenu {
+        width: 50px;
+    }
+
+
+    .showMenu>h2 {
+        display: none;
+    }
+
+    .showMenu>span {
+        display: none;
+    }
+
+    .showMenu ul {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+    }
+
+    .hideMenu > h2{
+        padding-top: 0px;
+    }
+
+    .hideMenu {
+        width: 150px;
+        position: fixed;
+        padding: 0px 0px;
+    }
+
+    .hideMenu .menubar{
+        padding: 15px;
+    }
+
+}

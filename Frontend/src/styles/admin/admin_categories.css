@@ -96,3 +96,17 @@
     background-color: white;
     border: 1px solid red;
 }
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px){
+    .admincategorycontent{
+        width: 100%;
+    }
+
+   .admincategorycontent > .content7{
+   padding: 10px;
+   overflow-x: auto;
+   }
+
+}

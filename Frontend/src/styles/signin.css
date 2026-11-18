@@ -5,7 +5,7 @@
 
 .logincontainer .signinRight {
     width: 50%;
-    height: 100vh;
+    height: 95%;
     background-color: var(--background-color);
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
 
 .signinform {
     width: 60%;
-    height: 85vh;
+    height: 85%;
     background-color: white;
     padding: 30px;
     display: flex;
@@ -80,7 +80,7 @@
 
 .signinform #info {
     padding: 5px 0;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 
@@ -121,34 +121,32 @@
 @media (max-width:575px) {
     .logincontainer .signinRight {
         width: 100%;
-        height: 100vh;
-        background-color: var(--background-color);
-        display: flex;
+        height: fit-content;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px 0px;
     }
 
     .signinform {
-        width: 80%;
-        height: 82vh;
-        background-color: white;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        border-radius: 10px;
+        width: 90%;
+        padding: 20px;
     }
 
     .logincontainer .signinRight>:first-child {
         display: block;
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 10px;
     }
 
     .logincontainer .left {
         display: none;
     }
+
+    .signinform>div>div {
+    padding: 6px 12px;
+    font-size: 12px;
+}
 
 }
 
@@ -158,23 +156,16 @@
 @media (min-width:576px) and (max-width:778.98px) {
     .logincontainer .signinRight {
         width: 100%;
-        height: 100vh;
-        background-color: var(--background-color);
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px 0px;
     }
 
     .signinform {
         width: 70%;
-        height: 82vh;
-        background-color: white;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        border-radius: 10px;
     }
 
     .logincontainer .signinRight>:first-child {
@@ -186,6 +177,11 @@
     .logincontainer .left {
         display: none;
     }
+
+     .signinform>div>div {
+    padding: 7px 10px;
+    font-size: 13px;
+}
 
 }
 

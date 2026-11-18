@@ -3,6 +3,8 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    overflow: auto;
+    align-items: center;
 }
 
 .logincontainer .loginRight >:first-child{
@@ -159,7 +161,6 @@
 
 .loginform{
     width: 80%;
-    height: 67vh;
 }
 
 .logincontainer .loginRight >:first-child{
@@ -170,6 +171,11 @@
 
 .logincontainer .left{
     display: none;
+}
+
+.loginform > div > div{
+    padding: 6px 12px;
+    font-size: 12px;
 }
 
 }
@@ -186,7 +192,6 @@
 
 .loginform{
     width: 70%;
-    height: 68vh;
 }
 
 .logincontainer .loginRight >:first-child{
@@ -197,6 +202,11 @@
 
 .logincontainer .left{
     display: none;
+}
+
+.loginform > div > div{
+    padding: 6px 12px;
+    font-size: 14px;
 }
 
 }

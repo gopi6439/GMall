@@ -39,7 +39,6 @@ function AdminDashboard({totalCustomers,totalSellers,totalProducts,totalAwaiting
         <>
             <div className="admindashboardcontent">
                
-
                 <div className="categories">
                     <div>
                         <h2>{totalCustomers}</h2>

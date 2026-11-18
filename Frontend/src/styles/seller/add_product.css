@@ -1,9 +1,11 @@
 .addproductcontent{
     width: 80%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: var(--background-color);
+    overflow: auto;
 }
 
 
@@ -147,4 +149,36 @@
     color: white;
     border: none;
     cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+@media (min-width:600px) and (max-width:800px){
+    .addproductcontent{
+    width: 100%;
+}
+}
+
+
+@media (max-width:599px){
+    .addproductcontent{
+    width: 100%;
+}
+
+.addproductcontent > .content3{
+    flex-direction: column;
+}
+
+.addproductcontent > .content3 > .leftcontent{
+    width: 100%;
+}
+
+.addproductcontent > .content3 > .rightcontent{
+    width: 100%;
+}
+
+.addproductcontent > .content3 > .rightcontent > img{
+    height: 50vh;
+}   
+
 }

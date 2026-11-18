@@ -1,15 +1,15 @@
-
-
-.myproductscontent{
+.myproductscontent {
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: var(--background-color);
+    height: 100vh;
+    overflow: auto;
 }
 
 
-.myproductscontent > .top{
+.myproductscontent>.top {
     width: 100%;
     background-color: white;
     padding: 15px;
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.myproductscontent > .top > div {
+.myproductscontent>.top>div {
     display: flex;
     gap: 5px;
     padding: 8px 10px;
@@ -28,26 +28,26 @@
     border-radius: 7px;
 }
 
-.myproductscontent > .top > div:hover{
+.myproductscontent>.top>div:hover {
     background-color: var(--background-color);
     cursor: pointer;
 }
 
-.myproductscontent > .content2{
+.myproductscontent>.content2 {
     width: 100%;
     background-color: white;
     padding: 15px;
     border-radius: 10px;
 }
 
-.myproductscontent > .content2 > :first-child{
+.myproductscontent>.content2> :first-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 10px;
 }
 
-.myproductscontent > .content2 > :first-child > input{
+.myproductscontent>.content2> :first-child>input {
     padding: 10px;
     width: 300px;
     outline: none;
@@ -55,7 +55,7 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.myproductscontent > .content2 > :first-child button{
+.myproductscontent>.content2> :first-child button {
     background-color: var(--add-cart);
     border: none;
     border-radius: 5px;
@@ -65,26 +65,26 @@
     cursor: pointer;
 }
 
-.myproductscontent > .content2 >table{
+.myproductscontent>.content2>table {
     width: 100%;
 }
 
-.myproductscontent > .content2 >table td > div{
+.myproductscontent>.content2>table td>div {
     display: flex;
     gap: 10px;
 }
 
-.myproductscontent > .content2 >table td > div > img{
+.myproductscontent>.content2>table td>div>img {
     width: 50px;
     height: 50px;
     border-radius: 7px;
 }
 
-.myproductscontent > .content2 >table td > div > h3{
+.myproductscontent>.content2>table td>div>h3 {
     font-size: 14px;
 }
 
-.myproductscontent > .content2 >table .Active{
+.myproductscontent>.content2>table .Active {
     padding: 5px 8px;
     background-color: rgba(18, 242, 18, 0.1);
     border-radius: 20px;
@@ -93,7 +93,7 @@
     color: green;
 }
 
-.myproductscontent > .content2 >table .Pending{
+.myproductscontent>.content2>table .Pending {
     padding: 5px 8px;
     background-color: rgba(242, 167, 18, 0.168);
     border-radius: 20px;
@@ -102,28 +102,28 @@
     color: orange;
 }
 
-.myproductscontent > .content2 >table th{
+.myproductscontent>.content2>table th {
     color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
 }
 
-.myproductscontent > .content2> table td > div{
+.myproductscontent>.content2>table td>div {
     display: flex;
     align-items: center;
-    padding: 5px 0; 
+    padding: 5px 0;
 }
 
-.myproductscontent > .content2> table td{
+.myproductscontent>.content2>table td {
     padding: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.myproductscontent > .content2> table td > .action{
+.myproductscontent>.content2>table td>.action {
     display: flex;
     gap: 7px;
 }
 
-.myproductscontent > .content2> table td > .action > button{
+.myproductscontent>.content2>table td>.action>button {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 12px;
@@ -131,14 +131,59 @@
     cursor: pointer;
 }
 
-.myproductscontent > .content2> table td > .action >:first-child{
+.myproductscontent>.content2>table td>.action>:first-child {
     color: blueviolet;
     background-color: rgba(137, 43, 226, 0.2);
     border: none;
 }
 
-.myproductscontent > .content2> table td > .action >:last-child{
+.myproductscontent>.content2>table td>.action>:last-child {
     color: red;
     background-color: white;
     border: 1px solid red;
+}
+
+/* RESPONSIVE */
+@media (min-width: 400px) and (max-width: 768px) {
+    .myproductscontent {
+        width: 100%;
+    }
+
+     .myproductscontent>.content2 {
+        overflow: auto;
+    }
+
+     .myproductscontent>.content2> :first-child>input {
+    padding: 5px;
+    width: 230px;
+}
+
+.myproductscontent>.content2> :first-child button {
+    font-size: 10px;
+    padding: 7px;
+}
+}
+
+
+@media (max-width: 400px) {
+    .myproductscontent {
+        width: 100%;
+    }
+
+    .myproductscontent>.content2 {
+        overflow: auto;
+    }
+
+    .myproductscontent>.content2> :first-child>input {
+    padding: 4px;
+    width: 190px;
+}
+
+.myproductscontent>.content2> :first-child button {
+    font-size: 9px;
+    padding: 6px;
+}
+
+
+
 }
